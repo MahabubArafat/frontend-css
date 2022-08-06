@@ -7,6 +7,9 @@
 * b=border
 * x=x-direction or horizontal
 * y=y-direction or vertical
+* also x direction has two sides, start and end
+* y direction has two sides too, top and bottom
+* <mark> There is no left and right </mark>
 * all measurements are in rem in case of bootstrap
 * t=means top
 * mt-3=margin top 3 rem
@@ -22,6 +25,7 @@
 * text-center
 * text-end
 * if nothing given then text will align at left
+* mx-auto to center the whole div in x direction
 
 # Grid
 *inside a container or container-md
