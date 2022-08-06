@@ -10,6 +10,22 @@
 </head>
 <body>
     <div class="container-md">
+
+      <div class="h1">Toasts</div>
+      <div id="toast" class="toast border-primary" data-animation="true" data-autohide="false" role="alert" aria-live="assertive" aria-atomic="true" style="position:fixed; top:10px; right: 10px;">
+        <div class="toast-header">
+          <!-- <img src="./images/dude-1.jpg" alt="" class="rounded mr-2"> -->
+          <strong class="mr-auto">Bootstrap</strong>
+          <small> 11mins ago </small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Hello world, this is a toast message
+        </div>
+
+      </div>
         <h1>Alerts</h1>
         <div class="alert alert-primary">primary alert</div>
 
@@ -86,7 +102,6 @@
         <strong>Holy guacamole!</strong> You should check in on some of those fields below.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
-      <div class="h1">Toasts</div>
        
     </div>
 
@@ -97,5 +112,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script>
+      let toastElemList=[].slice.call(document.querySelectorAll('.toast'))
+      let toastList=toastElemList.map(function(toastEl){
+
+        return new bootstrap.Toast(toastEl)
+      })
+      toastList[0].show()
+    </script>
+  </body>
 </html>
