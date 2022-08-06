@@ -40,3 +40,11 @@
 * bg-secondary,bg-dark, bg-danger, bg-info,bg-success
 * bg-transparent is also available
 * border-success,border-primary
+
+# Want to make anything responsive to hover?
+* just add -hover in the class, it will make the content hoverable, like it will change color as you go mousse over them
+* table-hover, text-hover,img-hover
+
+# Want to make anything responsive?
+* add -responsive after that element name in the class, table-responsive, text-responsive
+* Bootstrap will take care of that
