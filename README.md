@@ -55,3 +55,15 @@
 * Just copy the html that the icon has by clicking on it, and paste
 * You can resize them as your need by changing height and width, all dimensions are in em
 * Also can color them using bootstrap classes primary,secondary these colors
+
+
+# Forms
+[Here are all the forms and input types are here](https://getbootstrap.com/docs/5.2/forms)
+* Check
+* Switch
+* Radio
+* File Selection
+* Size Manipulation
+* Dropdown
+* Datalist
+* etc etc
