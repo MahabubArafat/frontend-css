@@ -48,3 +48,10 @@
 # Want to make anything responsive?
 * add -responsive after that element name in the class, table-responsive, text-responsive
 * Bootstrap will take care of that
+
+
+# Icons
+[This webpage container the icons provided by bootstrap](https://icons.getbootstrap.com/)
+* Just copy the html that the icon has by clicking on it, and paste
+* You can resize them as your need by changing height and width, all dimensions are in em
+* Also can color them using bootstrap classes primary,secondary these colors
